@@ -1,0 +1,28 @@
+[project]
+name = "ai-training-service"
+version = "1.0.0"
+description = "AI 训练服务（旁路增强）：历史交易数据离线训练 + 交易对手关系图/指标提取，写入指标存储"
+requires-python = ">=3.10"
+
+# 全部为开源 PyPI 依赖，无任何私有源
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.8.0",
+    "SQLAlchemy>=2.0.0",
+    "PyMySQL>=1.1.0",
+    "pandas>=2.2.0",
+    "scikit-learn>=1.5.0",
+    "networkx>=3.3",
+    "httpx>=0.27.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "hypothesis>=6.100.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

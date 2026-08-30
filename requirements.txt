@@ -1,0 +1,14 @@
+# AI 训练服务依赖（全部来自 PyPI 公共 registry，无私有源）
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.8.0
+SQLAlchemy>=2.0.0
+PyMySQL>=1.1.0
+pandas>=2.2.0
+scikit-learn>=1.5.0
+networkx>=3.3
+httpx>=0.27.0
+croniter>=2.0.0
+# dev
+pytest>=8.0.0
+hypothesis>=6.100.0
